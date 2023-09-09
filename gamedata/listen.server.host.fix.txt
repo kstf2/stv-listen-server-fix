@@ -1,0 +1,52 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"UTIL_GetListenServerHost"
+			{
+				"library"   "server"
+				"linux"     "@_Z24UTIL_GetListenServerHostv"
+				// aUtilGetlistens
+				"windows"   "\x8B\x0D\x2A\x2A\x2A\x2A\x8B\x01\x8B\x40\x08\xFF\xD0\x84\xC0\x74\x2A\x68\x2A\x2A\x2A\x2A"
+			}
+
+			"UTIL_IsCommandIssuedByServerAdmin"
+			{
+				"library"   "server"
+				"linux"     "@_Z33UTIL_IsCommandIssuedByServerAdminv"
+				// aScriptdebugtra_0
+				"windows"   "\x55\x8B\xEC\x81\xEC\x84\x00\x00\x00\x56\xE8\x2A\x2A\x2A\x2A"
+			}
+
+			"UTIL_GetCommandClientIndex"
+			{
+					"library"   "server"
+					"linux"     "@_Z26UTIL_GetCommandClientIndexv"
+					"windows"   "\xA1\x2A\x2A\x2A\x2A\x40\xC3"
+			}
+		}
+
+		"Functions"
+		{
+			"UTIL_GetListenServerHost"
+			{
+				"signature" "UTIL_GetListenServerHost"
+				"callconv" "cdecl"
+				"return" "cbaseentity"
+				"this" "ignore"
+				"hooktype" "raw"
+			}
+
+			"UTIL_IsCommandIssuedByServerAdmin"
+			{
+				"signature" "UTIL_IsCommandIssuedByServerAdmin"
+				"callconv" "cdecl"
+				"return" "bool"
+				"this" "ignore"
+				"hooktype" "raw"
+			}
+		}
+	}
+}
